@@ -66,7 +66,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer product;
+        if (a != null && b!= null) {
+            product = a * b;
+        }
+        // Return the product
+        return product; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -79,7 +84,15 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal divisionResult;
+        if (a != null && b != null){
+            if (b == 0){
+                divisionResult = 0;
+            } else {
+                divisionResult = a/b;
+            }
+        }
+        return divisionResult; // Replace null with the variable you used to store the result
     }
 
     /**
